@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from __future__ import print_function
 
 import argparse
@@ -9,7 +10,7 @@ import configparser
 
 # constants
 
-DEFAULT_RELEASE="6.2.1"
+DEFAULT_RELEASE="7.1.0"
 
 TEMPLATES_DIR = "templates"
 BROKER_TEMPLATE = os.path.join(TEMPLATES_DIR, "kafka.template")

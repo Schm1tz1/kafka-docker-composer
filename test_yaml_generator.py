@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import unittest
 
 from kafka_docker_composer import YamlGenerator, OffsetNotFoundException
