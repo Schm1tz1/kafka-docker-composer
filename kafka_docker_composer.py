@@ -10,7 +10,7 @@ import configparser
 
 # constants
 
-DEFAULT_RELEASE="7.1.0"
+DEFAULT_RELEASE="7.1.1"
 
 TEMPLATES_DIR = "templates"
 BROKER_TEMPLATE = os.path.join(TEMPLATES_DIR, "kafka.template")
@@ -425,6 +425,7 @@ if __name__ == '__main__':
                         help="Number of Schema Registry instances [0]")
     parser.add_argument('-p', '--prometheus', default=False, action='store_true', help="Include Prometheus [False]")
     parser.add_argument('--control-center', default=False, action='store_true', help="Include Confluent Control Center [False]")
+    parser.add_argument('--connect', default=False, action='store_true', help="Include Kafka Connect [False]")
 
     parser.add_argument('--kafka-container', default=KAFKA_CONTAINER,
                         help="Container used for Kafka, default \"{}\"".format(KAFKA_CONTAINER))
